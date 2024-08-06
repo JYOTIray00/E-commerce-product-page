@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Style */
+
+.header {
+    background: radial-gradient(#fff, #c38ddc);
+}
+
+/* Main container */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p {
+    color: #555;
+}
+
+
+
+
+/* main product design section */
+
+.design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-image {
+    max-width: 40%;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-bottom: 5rem;
+}
+
+.product-image img {
+    display: block;
+    width: 400px;
+    height: auto;
+}
+
+.product-details {
+    flex: 0 0 55%;
+    max-width: 62%;
+    padding: 4rem 2rem
+}
+
+.product-details p {
+    flex: 0 0 55%;
+    max-width: 100%;
+    padding: -2rem 2rem;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-details .h4 {
+    margin: 25px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.product-details .h3 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.product-details select {
+    display: block;
+    padding: 5px;
+    margin-top: 11px;
+    border: 1px solid #3b214f;
+}
+
+.product-details input {
+    width: 43px;
+    height: 28px;
+    padding-left: 4px;
+    font-size: 14px;
+    margin-top: 20px;
+    border: 1px solid #3b214f;
+}
+
+input:focus {
+    outline: none;
+}
+
+.product-details .fa {
+    color: #3b214f;
+    margin-left: 10px;
+}
+
+button {
+    display: inline-block;
+    background: #9d1ec7;
+    color: #fff;
+    padding: 8px 21px;
+    margin: 2rem 2.5rem 1.5rem 0rem;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+button:hover {
+    background: #4b3456;
+}
+
+
+/* Related products design */
+.samll-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.samll-container h5{
+ justify-content:space-between;
+ margin: 100px auto 10px;
+ margin-right: 32px;
+ text-align: right;
+}
+.samll-container h5:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+
+}
+
+
+.samll-container h2 {
+    position: relative;
+    font-size: 3vw;
+    text-align: center;
+    margin: 0 auto 70px;
+    line-height: 60px;
+    color: #555;
+}
+
+.samll-container h2::after {
+    position: absolute;
+    content: "";
+    background: #7b2897;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.related-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.details {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 300px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.details img {
+    width: 100%;
+}
+
+.details p {
+    font-size: 14px;
+}
+
+.rating {
+    color: #9d1ec7;
+}
+
+.details:hover {
+    transform: translateY(-5px);
+}
+
+/* -----------footer--------- */
+footer {
+    background: radial-gradient(#fff, #c38ddc);
+    color: #555;
+    padding: 7px 525px;
+    margin: 5px;
+    text-align: center;
+}
+
+.center {
+    text-align:center;
+    font-size: 13px;
+    
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items:flex-start;
+       
+    }
+
+    nav ul {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display:block;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+       font-size: 1rem;
+    }
+
+    .design {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image{
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .product-details{
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-details {
+        padding: 2rem 1rem;
+    }
+
+    .samll-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .related-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+
+
+
